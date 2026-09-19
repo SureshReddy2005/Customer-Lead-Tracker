@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Lead Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Lead Management Dashboard</h1>
+        </header>
+        
+        <section class="form-section">
+            <h2>Add New Lead</h2>
+            <form id="leadForm">
+                <input type="text" id="name" placeholder="Full Name" required>
+                <input type="email" id="email" placeholder="Email Address" required>
+                <select id="status">
+                    <option value="New">New</option>
+                    <option value="Contacted">Contacted</option>
+                    <option value="Qualified">Qualified</option>
+                </select>
+                <button type="submit">Save Lead</button>
+            </form>
+        </section>
+
+        <section class="data-section">
+            <h2>Current Leads</h2>
+            <table id="leadsTable">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Data populated by backend -->
+                    <tr>
+                        <td>1</td>
+                        <td>Jane Doe</td>
+                        <td>jane.doe@example.com</td>
+                        <td><span class="badge new">New</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </div>
+</body>
+</html>
